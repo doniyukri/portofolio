@@ -344,7 +344,9 @@
           </div>
           <div class="col-lg-6">
             <!-- Contact Form -->
-            <form id="contactForm" netlify>
+            <form id="contactForm" name='contact' method="POST"
+            data-netlify-recaptcha="true"
+            data-netlify="true">
               <div class="form-group">
                 <input
                   type="text"
@@ -373,6 +375,7 @@
                   >How can I help?</label
                 >
               </div>
+              <div data-netlify-recaptcha="true"></div>
               <div class="form-group">
                 <button type="submit" class="form-control-submit-button">
                   Submit
